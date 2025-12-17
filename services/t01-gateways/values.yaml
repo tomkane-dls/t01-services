@@ -1,0 +1,5 @@
+epics-gateways:
+  # for personal namespaces we don't have host network permission
+  hostNetwork: false
+  # for the tutorials use the developer image - good for troubleshooting
+  image: ghcr.io/epics-containers/epics-gateways-developer:2025.7.4
