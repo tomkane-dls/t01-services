@@ -3,3 +3,4 @@ epics-gateways:
   hostNetwork: false
   # for the tutorials use the developer image - good for troubleshooting
   image: ghcr.io/epics-containers/epics-gateways-developer:2025.7.4
+  ca_address_list: "bl01t-di-cam-01 bl01t-mo-sim-01"
