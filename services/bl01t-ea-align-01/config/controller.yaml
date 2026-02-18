@@ -1,0 +1,12 @@
+## yaml-language-server: $schema=schema.json
+
+controller:
+  uris:
+    pitch: SIM/ttyACM0
+    yaw: SIM/ttyACM1
+transport:
+  - ioc:
+      pv_prefix: BL01T-EA-ALIGN-02
+    gui:
+      output_path: /epics/opi/output.bob
+      title: Alignment Mirror
