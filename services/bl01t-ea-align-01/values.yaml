@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=../../.helm-shared/values.schema.json
+
+ioc-instance:
+  image: ghcr.io/diamondlightsource/fastcs-standa-mirror:latest
+  args:
+    - stdio-socket --ptty "fastcs-standa-mirror run /epics/ioc/config/controller.yaml"
+  # resources:
+  #   limits:
+  #     diamond.ac.uk/standa-1: 1
+  #     diamond.ac.uk/standa-2: 1
+  #   requests:
+  #     diamond.ac.uk/standa-1: 1
+  #     diamond.ac.uk/standa-2: 1
+
+  livenessExecutable: ""
+  preStopExecutable: ""
