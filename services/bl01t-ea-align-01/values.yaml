@@ -2,8 +2,14 @@
 
 ioc-instance:
   image: ghcr.io/diamondlightsource/fastcs-standa-mirror:latest
+  command:
+    - fastcs-stand-mirror
   args:
-    - stdio-socket --ptty "fastcs-standa-mirror run /epics/ioc/config/controller.yaml"
+    - run
+    - /epics/ioc/config/controller.yaml
+
+    #  args:
+    #    - stdio-socket --ptty "fastcs-standa-mirror run /epics/ioc/config/controller.yaml"
   # resources:
   #   limits:
   #     diamond.ac.uk/standa-1: 1
