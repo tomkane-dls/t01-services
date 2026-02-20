@@ -3,7 +3,7 @@
 ioc-instance:
   image: ghcr.io/diamondlightsource/fastcs-standa-mirror:latest
   command:
-    - fastcs-stand-mirror
+    - fastcs-standa-mirror
   args:
     - run
     - /epics/ioc/config/controller.yaml
