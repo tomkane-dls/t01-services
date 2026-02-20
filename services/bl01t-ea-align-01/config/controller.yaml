@@ -6,7 +6,7 @@ controller:
     yaw: SIM/ttyACM1
 transport:
   - ioc:
-      pv_prefix: BL01T-EA-ALIGN-02
+      pv_prefix: BL01T-EA-ALIGN-01
     gui:
       output_path: /epics/opi/output.bob
       title: Alignment Mirror
