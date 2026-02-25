@@ -3,10 +3,11 @@
 ioc-instance:
   image: ghcr.io/diamondlightsource/fastcs-standa-mirror:latest
   command:
-    - fastcs-standa-mirror
+    - sleep
   args:
-    - run
-    - /epics/ioc/config/controller.yaml
+    - "3600"
+      #    - run
+      #    - /epics/ioc/config/controller.yaml
 
     #  args:
     #    - stdio-socket --ptty "fastcs-standa-mirror run /epics/ioc/config/controller.yaml"
