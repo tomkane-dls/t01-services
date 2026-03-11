@@ -2,9 +2,10 @@
 
 ioc-instance:
   image: ghcr.io/diamondlightsource/fastcs-thorlabs-mff:latest
-  startCommand: fastcs-thorlabs-mff
-  startArgs:
+  command:
+    - fastcs-thorlabs-mff
+  args:
     - run
     - /epics/ioc/config/controller.yaml
-  liveness: ["exit", "0"]
-  stop: ["exit", "0"]
+  livenessExecutable: ""
+  preStopExecutable: ""
