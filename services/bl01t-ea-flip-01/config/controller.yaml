@@ -6,4 +6,4 @@ transport:
       pv_prefix: BL01T-EA-FLIP-01
     gui:
       output_path: /epics/opi/output.bob
-      title: Outbound Mirror
+      title: TEST FLIP
