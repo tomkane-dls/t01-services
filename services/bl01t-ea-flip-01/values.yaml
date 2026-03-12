@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://github.com/epics-containers/ec-helm-charts/releases/download/4.2.0/ioc-instance.schema.json
 
 ioc-instance:
-  image: ghcr.io/diamondlightsource/fastcs-thorlabs-mff:0.1.1
+  image: ghcr.io/diamondlightsource/fastcs-thorlabs-mff:latest
   command:
     - fastcs-thorlabs-mff
   args:
