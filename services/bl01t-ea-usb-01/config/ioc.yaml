@@ -1,11 +1,5 @@
-# yaml-language-server: $schema=https://github.com/epics-containers/ioc-aduvc/releases/download/latest/ibek.ioc.schema.json
 ioc_name: "{{ _global.get_env('IOC_NAME') }}"
-description: Test ADUVC IOC - attempting UVC connection
+description: Test ADUVC IOC - no camera configured
 entities:
   - type: devIocStats.iocAdminSoft
     IOC: "{{ ioc_name | upper }}"
-  - type: ADUVC.UVC
-    P: BL01T-DI-CAM-01
-    R: ":DET:"
-    PORT: DET.DET
-
